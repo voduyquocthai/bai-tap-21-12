@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = []
+        for(i = 0; i < 2; i++){
+            let a = parseFloat(prompt('Nhập vào 2 số của bạn'))
+            arr.push(a)
+        }
+        function cong(arr){
+            let total = arr[0] + arr[1]
+            document.write('Tổng của 2 số là ' + total + '<br>')
+        }
+        function tru(arr){
+            let minus = arr[0] - arr[1]
+            document.write('Hiệu của 2 số là ' + minus + '<br>')
+        }
+        function nhan(arr){
+            let multi = arr[0] * arr[1]
+            document.write('Tích của 2 số là ' + multi + '<br>')
+        }
+        function chia(arr){
+            let divide = arr[0] / arr[1]
+            document.write('Thương của 2 số là ' + divide)
+        }
+        
+        let result1 = cong(arr)
+        let result2 = tru(arr)
+        let result3 = nhan(arr)
+        let result4 = chia(arr)
+
+    </script>
+</body>
+</html>
